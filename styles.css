@@ -32,7 +32,7 @@ a {
 }
 
 html {
-    background-color: #F7F7F2;
+    background-color: gray;
 }
 
 .item {
@@ -48,12 +48,42 @@ img {
 h1 {
     text-align: center;
     font-size: 3em;
+    margin-bottom: 0;
+    padding-bottom: 4px;
 }
 
 h2 {
     font-size: .4em;
     color: gray;
     text-align: right;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 70px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1em;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+p {
+    margin: 20px 30px 20px 30px;
+}
+
+hr {
+    border: 2px solid #F79256;
+    padding-top: 0;
+    margin-top: 0;
+    width: 60%;
 }
 
 .footer {
@@ -72,11 +102,19 @@ h2 {
     justify-content: space-around;
 }
 
-
+@media only screen and (max-width:801px) {
+    .page {
+        padding: 0px 0px 150px 0px;
+    }
+}
 
 @media only screen and (min-width:801px) {
     .page {
-        width: 900px;
+        width: 800px !important;
         margin: 0 auto;
+        padding: 0px 20px 150px 20px;
+        border-left: 1px solid #4F6D7A;
+        border-right: 1px solid #4F6D7A;
+        box-sizing: border-box;
     }
 }
